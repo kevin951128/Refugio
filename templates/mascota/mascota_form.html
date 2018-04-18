@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 
 {% block title %}
-    NUEVA MASCOTA
+    MASCOTAS
 {% endblock %}
 
 {% block content %}
@@ -10,4 +10,5 @@
     {{ form.as_p }}
     <button type="submit">Guardar</button>
     </form>
+    <a class="btn btn-default" href="{% url 'mascota:index' %}">Volver</a>
 {% endblock %}

@@ -11,7 +11,8 @@
 {% endblock %}
 
 {% block content %}
-    <h1></h1>
+    <a class="btn btn-primary" href="{% url 'mascota:mascota_listar' %}">Listado de mascotas</a>
+    <a class="btn btn-primary" href="{% url 'mascota:mascota_crear' %}">Registrar mascota</a>
 {% endblock %}
 
 {% block footer %}
